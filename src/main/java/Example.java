@@ -9,7 +9,11 @@ public class Example {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World - v3!";
+        return "Hello World - Openshift";
+    }
+    @RequestMapping("/{input}")
+    String congrates(@PathVariable String input) {
+        return "Hi"+ input +"welcome to openshift";
     }
 
     public static void main(String[] args) throws Exception {
